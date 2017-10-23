@@ -11,7 +11,6 @@ RUN wget http://archive.apache.org/dist/hadoop/core/hadoop-${HADOOP_VERSION}/had
 
 ENV HIVE_VERSION 2.3.0
 ENV HIVE_HOME /usr/local/hive
-ENV HIVE_CONF_DIR=${HIVE_HOME}/conf
 
 RUN wget http://archive.apache.org/dist/hive/hive-${HIVE_VERSION}/apache-hive-${HIVE_VERSION}-bin.tar.gz && \
     tar -zxf /apache-hive-${HIVE_VERSION}.tar.gz && \
