@@ -13,6 +13,6 @@ ENV HIVE_VERSION 2.3.0
 ENV HIVE_HOME /usr/local/hive
 
 RUN wget http://archive.apache.org/dist/hive/hive-${HIVE_VERSION}/apache-hive-${HIVE_VERSION}-bin.tar.gz && \
-    tar -zxf /apache-hive-${HIVE_VERSION}.tar.gz && \
-    rm /apache-hive-${HIVE_VERSION}.tar.gz && \
-    mv apache-hive-${HIVE_VERSION} ${HIVE_HOME}
+    tar -zxf /apache-hive-${HIVE_VERSION}-bin.tar.gz && \
+    rm /apache-hive-${HIVE_VERSION}-bin.tar.gz && \
+    mv apache-hive-${HIVE_VERSION}-bin ${HIVE_HOME}
